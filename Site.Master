@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CarWash.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Vendor CSS Files -->
+    <link href="./Content/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Content/assets/css/style.css" rel="stylesheet">
+    <link href="./Content/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./Content/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./Content/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="./Content/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="./Content/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="./Content/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <script src="./Content/assets/js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Content/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="./Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./Content/assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="./Content/assets/vendor/echarts/echarts.min.js"></script>
+    <script src="./Content/assets/vendor/quill/quill.js"></script>
+    <script src="./Content/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="./Content/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="./Content/assets/vendor/php-email-form/validate.js"></script>
+
+
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <header id="header" class="header fixed-top d-flex align-items-center">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class=" d-flex align-items-center">
+                    <span class="d-none d-lg-block">JAZZERA</span>
+                </a>
+                <i class="bi bi-list toggle-sidebar-btn"></i>
+            </div>
+
+            <script>
+                var toggleButton = document.querySelector('.toggle-sidebar-btn');
+
+                // Check if the element exists
+                if (toggleButton) {
+                    // Add onclick event handler
+                    toggleButton.onclick = function (e) {
+                        // Toggle the class on body
+                        document.body.classList.toggle('toggle-sidebar');
+                    };
+                }
+
+
+            </script>
+
+        </header>
+        <!-- End Header -->
+
+
+        <!-- ======= Sidebar ======= -->
+        <aside id="sidebar" class="sidebar">
+
+            <ul class="sidebar-nav" id="sidebar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link " runat="server" href="~/DashBoard">
+                        <i class="bi bi-grid-1x2-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <!-- End Dashboard Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">
+                        <i class="bi bi-people-fill"></i>
+                        <span>Employees</span>
+                    </a>
+                </li>
+                <!-- End Employees Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <!-- End Users Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">
+                        <i class="bi bi-car-front-fill"></i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <!-- End Services Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">
+                        <i class="bi bi-box-fill"></i>
+                        <span>Product</span>
+                    </a>
+                </li>
+                <!-- End Product Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">
+                        <i class="bi bi-graph-up-arrow"></i>
+                        <span>Finance</span>
+                    </a>
+                </li>
+                <!-- End Finance Nav -->
+
+
+                <li class="nav-item" style="margin-top: 200px !important;">
+                    <a class="nav-link " href="index.html">
+                        <i class="bi bi-box-arrow-left" style="font-size: x-large;"></i>
+                        <span>LogOut</span>
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+        <!-- End Sidebar-->
+
+
+
+
+
+
+        <main id="main" class="main">
+        <!-- Content Here  -->
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </main>
+
+        
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
