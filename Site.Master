@@ -109,7 +109,7 @@
                 <!-- End Dashboard Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link " href="index.html">
+                    <a class="nav-link " href="/Employees/Employee.aspx">
                         <i class="bi bi-people-fill"></i>
                         <span>Employees</span>
                     </a>
@@ -117,7 +117,7 @@
                 <!-- End Employees Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link " href="index.html">
+                    <a class="nav-link " href="/user/Users.aspx">
                         <i class="bi bi-person-circle"></i>
                         <span>Users</span>
                     </a>
@@ -125,7 +125,7 @@
                 <!-- End Users Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link " href="index.html">
+                    <a class="nav-link " href="/Services/Service.aspx">
                         <i class="bi bi-car-front-fill"></i>
                         <span>Services</span>
                     </a>
@@ -133,7 +133,7 @@
                 <!-- End Services Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link " href="index.html">
+                    <a class="nav-link " href="/Products/Product.aspx">
                         <i class="bi bi-box-fill"></i>
                         <span>Product</span>
                     </a>

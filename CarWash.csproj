@@ -442,8 +442,11 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="DashBoard.aspx" />
+    <Content Include="Employees\Employee.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Finance\FinanceDB.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Products\Product.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -604,7 +607,9 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Services\Service.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="user\Users.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\WebForm1.aspx" />
     <Content Include="Web.config" />
@@ -622,10 +627,38 @@
     <Compile Include="DashBoard.aspx.designer.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Employees\Employee.aspx.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employees\Employee.aspx.designer.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\FinanceDB.aspx.cs">
+      <DependentUpon>FinanceDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Finance\FinanceDB.aspx.designer.cs">
+      <DependentUpon>FinanceDB.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Products\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -639,6 +672,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
